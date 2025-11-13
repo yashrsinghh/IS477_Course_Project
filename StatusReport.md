@@ -78,8 +78,15 @@ Status: In-Progress
 
 Planning Ahead Weeks 13-15:
 
-Between Weeks 13-15, our goal is to move from our clean, merged dataset to a finished analysis about how interest rates and the S&P 500 move together. In Week 13, we want to start running analysis by testing how different rate levels and rate changes relate to returns and volatility. In Week 14, we’ll shift toward reproducibility by writing a data dictionary, polishing our scripts, and tightening up our GitHub documentation. Finally, in Week 15, we plan to pull everything together by refining analysis, finalizing figures, double-check citation/organization in the repository, and complete the report. By the end, we want a project that’s both analytically solid, but also easy for someone else to understand and reproduce. 
+In Week 13, we want to start running analysis by testing how different rate levels and rate changes relate to returns and volatility. In Week 14, we’ll shift toward reproducibility by writing a data dictionary, polishing our scripts, and tightening up our GitHub documentation. Finally, in Week 15, we plan to pull everything together by refining analysis, finalizing figures, double-check citation/organization in the repository, and complete the report. By the end, we want a project that fulfills our research question.
 
 
 Team Member Contributions:
-Yash Singh: I found and cleaned the Federal Funds Rate dataset and helped integrate it with the S&P 500 data. Additionally, I merged the cleaned datasets into a single table and computed summary statistics for the merged data.
+Yash Singh: I cleaned the Federal Funds Rate dataset. Additionally, I merged the cleaned datasets into a single table and computed summary statistics for the merged data.
+Vishv Patel: I cleaned the S&P 500 dataset including cutting down rows to make sure the dates aligned wil the Federal Funds Rate. Additionally, I performed quality checks on the data and code throughout the weeks as well as built the visual models present in our code.
+
+Dataset URLs and Licensing Notes:
+Dataset 1: https://www.kaggle.com/datasets/eswaranmuthu/u-s-economic-vital-signs-25-years-of-macro-data 
+Dataset 2: https://www.investing.com/indices/us-spx-500-historical-data 
+Licensing Notes: 
+The Federal Funds Rate dataset was licensed under CC BY 4.0 which allows us free use to use the material. The S&P 500 dataset falls under the T&C of investing.com. The data can be used for non-commercial use like schoolwork.

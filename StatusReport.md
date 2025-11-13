@@ -38,3 +38,39 @@ Artifacts: Cleaning/merge notebook, cleaned CSVs, and merged daily-level dataset
 Status: Completed
 
 
+Week 10: Creating Key Features
+
+Week Plan: For Week 10, we moved from basic cleaning into creating key features that relate to our research question. We planned to create measures that show how the S&P 500 is performing and how volatile it is over time. On the interest-rate side, we aimed to summarize how policy rates move daily and how they compare to one another. With these, the features would give us a clever view of how interest rates and market conditions evolve. We planned to have a dataset ready to roll up to a monthly level.  
+
+Changes: We started with a 30-day rolling volatility and daily rate-change features as a beginning step, instead of aggregating everything to monthly measures from the start. This still supports our goal of studying how rate movements relate to returns/volatility. 
+
+What We Completed: We cleaned up the numeric columns by converting all relevant fields to numeric types so they could be used in calculations. We engineered multiple key features such as Log_Return, Volatility_30D, FedFunds_Change, SOFR_Change, Spread_S0FR_Fed, and Intraday_Range. After creating these features, we dropped rows with missing values created by rolling windows, to have a clean dataset with 1,764 rows and 18 columns. We finally formatted the rate-change variables as percentages to make them easier to interpret for visualization. 
+
+Artifacts: Script/notebook for feature engineering. 
+
+Status: Completed
+
+
+Week 11: Merging Datasets and Checking Quality
+
+Week Plan: For Week 11, we planned to take the merged dataset and focus on quality checking before doing analysis. We wanted to ensure time coverage and row counts looked right, verify the data type for each column, and make sure there were no missing values. We aimed to create summary statistics to spot patterns and unusual relationships between variables. We planned to identify outliers as well. 
+
+Changes: We ran quality checks at the daily first level, with an idea to aggregate to monthly later. We wanted to be confident in the underlying data. 
+
+What We Completed: We used merge_df.info(), .shape, and .describe() to confirm we had 1,764 rows and all feature columns had appropriate numeric types. We created a correlation matrix for the numeric columns to check relationships between features. We checked for unusual values and summarized in a separate table. This gave us more confidence that our merged dataset looked reasonable and was ready for aggregation and visualization steps. 
+
+Artifacts: Week 11 quality-check notebook with summary statistics, correlations, and outlier table and the verified merged feature dataset. 
+
+Status: Completed
+
+
+Week 12: Cleaning and Automating the Process
+
+Week Plan: For Week 12, we planned to take our integrated dataset and polish it for analysis. This would involve resolving any missing values or alignment issues, and making sure all features looked reasonable. Additionally, we planned to build an automated workflow so that, starting from raw CSVs, our cleaning, merging, and feature-creation steps could be reproduced easily. Lastly, we wanted to generate  visualizations to see how features move overtime with one another and re-check the data.
+Changes: The main adjustment this week was shifting towards creating visualizations and confirming the data looked reasonable, while pushing most of the automation work to the next milestone. 
+
+What We Completed: We used our cleaned, merged dataset to create line plots of the Federal Funds rate and S&P 500 daily prices over time, as well as a combined chart that overlays both series using separate y-axes. These plots help the both of us confirm that key events are captured correctly in our data. Furthermore, we used these visuals as a check that our date alignment and feature engineering steps from the previous weeks were working as intended. After that, we started outlining how these steps will eventually be wrapped into a reusable script or notebook. 
+
+Artifacts: Notebook with time-series plots of the Federal Funds rate, S&P 500 price, and their combined comparison, plus notes outlining the planned automated workflow. 
+
+Status: In-Progress

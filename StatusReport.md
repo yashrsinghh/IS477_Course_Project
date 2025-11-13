@@ -74,3 +74,12 @@ What We Completed: We used our cleaned, merged dataset to create line plots of t
 Artifacts: Notebook with time-series plots of the Federal Funds rate, S&P 500 price, and their combined comparison, plus notes outlining the planned automated workflow. 
 
 Status: In-Progress
+
+
+Planning Ahead Weeks 13-15:
+
+Between Weeks 13-15, our goal is to move from our clean, merged dataset to a finished analysis about how interest rates and the S&P 500 move together. In Week 13, we want to start running analysis by testing how different rate levels and rate changes relate to returns and volatility. In Week 14, we’ll shift toward reproducibility by writing a data dictionary, polishing our scripts, and tightening up our GitHub documentation. Finally, in Week 15, we plan to pull everything together by refining analysis, finalizing figures, double-check citation/organization in the repository, and complete the report. By the end, we want a project that’s both analytically solid, but also easy for someone else to understand and reproduce. 
+
+
+Team Member Contributions:
+Yash Singh: I found and cleaned the Federal Funds Rate dataset and helped integrate it with the S&P 500 data. Additionally, I merged the cleaned datasets into a single table and computed summary statistics for the merged data.

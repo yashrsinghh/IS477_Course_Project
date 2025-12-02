@@ -1,0 +1,7 @@
+,value
+corr_return_fed,0.030276574381103066
+corr_vol_fedchange,-0.23629395988480456
+coef_return_fed,0.0007400086586147244
+intercept_return_fed,0.009118739286965709
+coef_vol_fedchange,-0.007986869213128292
+intercept_vol_fedchange,0.01077551172324199

@@ -1,0 +1,3 @@
+,sha256
+Federal_Funds_Rate.csv,ce05a5c26bfac61145b280f032ac6f364a12386001908f8133eeddd1ff0aab48
+S&P_500_Data.csv,a60a77aa75b22a633b9d90b20d12c1d658375db36c0dfc1ddaab5c71050e61e8

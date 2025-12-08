@@ -1,4 +1,4 @@
-IS477 Final Project Submission (Milestone 4)
+IS477 Final Project Submission
 
 Contributors:
 
